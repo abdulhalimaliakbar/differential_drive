@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <name>differential_drive_description</name>
+  <version>0.0.1</version>
+  <description>differential_drive_gazebo</description>
+  <maintainer email="joe@joemcm.com">Joe McMahon</maintainer>
+  <license>MIT</license>
+  <author  email="joe@joemcm.com">Joe McMahon</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rviz</run_depend>
+</package>

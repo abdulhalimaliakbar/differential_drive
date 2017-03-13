@@ -1,0 +1,14 @@
+<package>
+  <name>differential_drive_gazebo</name>
+  <version>0.0.1</version>
+  <description>differential_drive_gazebo</description>
+  <maintainer email="joe@joemcm.com">Joe McMahon</maintainer>
+  <license>MIT</license>
+  <author  email="joe@joemcm.com">Joe McMahon</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>gazebo_plugins</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>gazebo_ros_control</run_depend>
+  <run_depend>differential_drive_description</run_depend>
+  <run_depend>xacro</run_depend>
+</package>

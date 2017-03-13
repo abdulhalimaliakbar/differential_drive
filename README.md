@@ -112,7 +112,7 @@ The TurtleBot has some built keyboard teleop commands. Keep the previous gazebo 
 
 Unfortunately, I did not have time to get the teleop working via launch parameters, as specified. I also did not have time to implement a differential drive controller to perform the below circle and square operations.
 
-![TurtleBot demo screenshot](https://github.com/jmcmahon443/differential_drive/turtlebot_demo.png)
+![TurtleBot demo screenshot](https://raw.githubusercontent.com/jmcmahon443/differential_drive/master/turtlebot_demo.png)
 
 ### circle
 `TODO.`

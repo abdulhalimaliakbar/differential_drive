@@ -1,6 +1,6 @@
 # ROS Differential Drive
 
-This repo is for testing a simple Differential Drive Robot with ROS Kinetic Kame on Ubuntu 16. It is simulated with Gazebo, and visualized with RViz. The robot should be controlled by keyboard commands, or should perform endless circle or square maneuvers.
+This repo is for testing a simple Differential Drive Robot with ROS Kinetic Kame on Ubuntu 16. It is simulated with Gazebo, and visualized with RViz. The robot should be controlled by keyboard commands, or should perform endless circle or square oeprations.
 
 Instructions for: [1. Installation](https://github.com/jmcmahon443/differential_drive#1-installation), and [2. Operation](https://github.com/jmcmahon443/differential_drive#2-operation) are included.
 
@@ -38,10 +38,10 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get update
 ```
 
-Install ROS Kinetic and all of the control dependencies.
+Install ROS Kinetic and TurtleBot packages.
 
 ```
-sudo apt-get install ros-kinetic-desktop-full ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control ros-kinetic-joint-state-controller ros-kinetic-position-controllers ros-kinetic-effort-controllers
+sudo apt-get install ros-kinetic-desktop-full ros-kinetic-turtlebot-gazebo ros-kinetic-turtlebot-teleop
 ```
 
 `rosdep update`
@@ -79,7 +79,7 @@ catkin_init_workspace
 
 Then clone this repository, which is a collection of ROS packages, into the `src` folder: `git clone https://github.com/jmcmahon443/differential_drive.git`
 
-All that is left is the compile the package in the workspace, the `catkin_ws` folder.
+All that is left is the compile the packages in the workspace, the `catkin_ws` folder.
 
 ```
 cd ..
@@ -100,25 +100,22 @@ Next, test the differential drive robot's gazebo file `roslaunch differential_dr
 
 Again close the gazebo window and `ctrl+c` in the terminal window to stop execution.
 
-This robot is not properly designed, and it takes a very long time to do so. For this reason, skip ahead to opening the TurtleBot in gazebo.
+This robot is not properly designed, and it takes a very long time to do so. For this reason, skip ahead to opening the TurtleBot in gazebo. The TurtleBot is a robust differential drive system and is well supported by the open-source community.
 
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch
+roslaunch turtlebot_demo turtlebot_empty_world.launch
 ```
 
 ### teleop
-`TODO.`
+
+The TurtleBot has some built keyboard teleop commands. Keep the previous gazebo screen open, start a new terminal window, source it, and run `roslaunch turtlebot_teleop keyboard_teleop.launch`
+
+Unfortunately, I did not have time to get the teleop working via launch parameters, as specified. I also did not have time to implement a differential drive controller to perform the below circle and square operations.
+
+![TurtleBot demo screenshot](https://github.com/jmcmahon443/differential_drive/turtlebot_demo.png)
 
 ### circle
 `TODO.`
 
 ### square
 `TODO.`
-
-## Acknowledgements
-`TODO.`
-
-## Notes
-`sudo apt-get install ros-kinetic-turtlebot-apps ros-kinetic-rviz-launchers`
-`sudo apt-get install ros-kinetic-turtlebot-simulator`
-`sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions ros-kinetic-turtlebot-simulator ros-kinetic-kobuki-ftdi ros-kinetic-ar-track-alvar-msgs`

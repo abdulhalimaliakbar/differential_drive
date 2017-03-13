@@ -1,12 +1,12 @@
 # ROS Differential Drive
 
-This repo is for testing a simple Differential Drive Robot with ROS Kinetic Kame on Ubuntu 16. It is simulated with Gazebo, and visualized with RViz. The robot should be controlled by keyboard commands, or should perform endless circle or square oeprations.
+This repo is for testing a simple Differential Drive Robot with ROS Kinetic Kame on Ubuntu 16. It is simulated with Gazebo, and visualized with RViz. The robot should be controlled by keyboard commands, or should perform endless circle or square oeprations. At first I tried doing it from scratch, but quickly found that I would run out of time, and then switched over to the TurtleBot, the most well-known open-source differential drive robot.
 
 Instructions for: [1. Installation](https://github.com/jmcmahon443/differential_drive#1-installation), and [2. Operation](https://github.com/jmcmahon443/differential_drive#2-operation) are included.
 
 ## 1. Installation
 
-These are the steps for installing Ubuntu 16, ROS Kinetic, and some TurtleBot dependences.
+These are the steps for installing Ubuntu 16, ROS Kinetic, and some TurtleBot dependencies.
 
 ### Install Ubuntu 16 on partition from USB stick
 
@@ -30,7 +30,7 @@ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C
 sudo apt-get update
 ```
 
-At this point I updated Ubuntu 16 software, installed `git`, any hardware drivers, and Sublime Text 3. These steps are not included in this documentation, as they depend on preferred development workflow. For example, for my Nvidia 860M graphics card, I find it useful to use the packages below.
+At this point I updated Ubuntu 16 software, installed `git`, any hardware drivers, and Sublime Text 3. These steps are not included in this documentation, as they depend on preferred development workflow. For example, for my Nvidia 860M graphics card, I find it useful to use the packages below. After installing the drivers, go into System Settings to select the latest one and reboot.
 
 ```
 sudo apt install nvidia-settings

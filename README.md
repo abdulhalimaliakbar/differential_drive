@@ -2,6 +2,8 @@
 
 This repo was created to complete Piaggio's Fast Forward interview process, which included a 28-minute Python test followed by creating a ROS package of a differential drive robot. This should help you with the latter.
 
+Make sure to update the wheels to `continuous` joints and reposition them and their rotational axes, in the `urdf/xacro` file.
+
 This repo is for testing a simple Differential Drive Robot with ROS Kinetic Kame on Ubuntu 16. It is simulated with Gazebo, and visualized with RViz. The robot should be controlled by keyboard commands, or should perform endless circle or square oeprations. At first I tried doing it from scratch, but quickly found that I would run out of time, and then switched over to the TurtleBot, the most well-known open-source differential drive robot.
 
 Instructions for: [1. Installation](https://github.com/jmcmahon443/differential_drive#1-installation), and [2. Operation](https://github.com/jmcmahon443/differential_drive#2-operation) are included.
